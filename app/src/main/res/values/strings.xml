@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lesson 13</string>
+    <string name="android">Android %1$s %1$s %1$s %1$s %1$s %1$s %2$s</string>
+    <string name="ios">IOS %1$s</string>
+    <string name="empty">Пусто</string>
+
+    <plurals name="years">
+        <item quantity="zero">%1$s лет</item>
+        <item quantity="one">%1$s год</item>
+        <item quantity="two">%1$s года</item>
+        <item quantity="few">%1$s года</item>
+        <item quantity="many">%1$s лет</item>
+    </plurals>
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/cbAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Android"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+
+        android:id="@+id/cbIos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="IOS"
+        app:layout_constraintStart_toStartOf="@id/cbAndroid"
+        app:layout_constraintTop_toBottomOf="@id/cbAndroid" />
+
+    <TextView
+        android:id="@+id/tvCheckBoxSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/cbIos"
+        app:layout_constraintTop_toBottomOf="@id/cbIos" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvCheckBoxSelected"
+        app:layout_constraintTop_toBottomOf="@id/tvCheckBoxSelected">
+
+        <RadioButton
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 год"
+            android:textColor="@color/purple_200" />
+
+        <RadioButton
+            android:id="@+id/second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 года"
+            android:textColor="@color/purple_200" />
+
+        <RadioButton
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 года"
+            android:textColor="@color/purple_200" />
+
+        <RadioButton
+            android:id="@+id/seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 лет"
+            android:textColor="@color/purple_200" />
+
+        <RadioButton
+            android:id="@+id/twentyOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="21 год"
+            android:textColor="@color/purple_200" />
+
+
+        <RadioButton
+            android:id="@+id/hundred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 лет"
+            android:textColor="@color/purple_200" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@id/radioGroup"
+        app:layout_constraintStart_toStartOf="@id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:text="@string/empty"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toEndOf="@id/cbAndroid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
